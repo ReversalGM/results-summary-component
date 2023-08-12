@@ -81,7 +81,7 @@ body {
 }
 
 .result__score {
-  height: min(50%, 10rem);
+  height: max(40%, 10rem);
   aspect-ratio: 1/1;
 
   display: flex;
@@ -96,7 +96,7 @@ body {
 }
 
 .result__score__user {
-  font-size: 3.25rem;
+  font-size: clamp(3.25rem, 15vh, 4.5rem);
   font-weight: 800;
   color: var(--white);
 }
@@ -276,5 +276,10 @@ button:focus {
 
   .result {
     border-radius: 2rem;
+    flex-basis: 50%;
+  }
+
+  .summary {
+    flex-basis: 50%;
   }
 }
