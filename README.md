@@ -25,8 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop screenshot](./screenshots/desktop_screenshot.png)
-![Mobile screenshot](./screenshots/mobile_screenshot.png)
+<p float="left">
+  <img src="./screenshots/desktop_screenshot.png" height="952">
+  <img src="./screenshots/mobile_screenshot.png" height="952">
+</p>
 
 ### Links
 
