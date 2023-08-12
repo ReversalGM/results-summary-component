@@ -1,47 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link href="index.css" rel="stylesheet" />
 
-  Your Result
-  76
-  of 100
+    <title>Results summary component</title>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="result-container">
+      <section class="result">
+        <h2 class="result__heading">Your Result</h2>
+        <div class="result__score">
+          <div class="result__score__user">76</div>
+          <div class="result__score__total">of 100</div>
+        </div>
+        <div class="rating-container">
+          <div class="result__rating">Great</div>
+          <p class="result__rating-description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </section>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <section class="summary">
+        <h2 class="summary__heading">Summary</h2>
+        <ul class="list">
+          <li class="list-item list-item--red">
+            <img
+              class="list-item__icon"
+              src="assets/images/icon-reaction.svg"
+              alt="reaction-icon"
+            />
+            <div class="list-item__text">Reaction</div>
+            <div class="list-item__score"><strong>80</strong> / 100</div>
+            <!-- Corner borders -->
+            <div
+              class="list-item__corner-border list-item__corner-border--topleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--topright"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botright"
+            ></div>
+          </li>
+          <li class="list-item list-item--yellow">
+            <img
+              class="list-item__icon"
+              src="assets/images/icon-memory.svg"
+              alt="reaction-icon"
+            />
+            <div class="list-item__text">Memory</div>
+            <div class="list-item__score"><strong>80</strong> / 100</div>
+            <!-- Corner borders -->
+            <div
+              class="list-item__corner-border list-item__corner-border--topleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--topright"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botright"
+            ></div>
+          </li>
+          <li class="list-item list-item--green">
+            <img
+              class="list-item__icon"
+              src="assets/images/icon-verbal.svg"
+              alt="reaction-icon"
+            />
+            <div class="list-item__text">Verbal</div>
+            <div class="list-item__score"><strong>80</strong> / 100</div>
+            <!-- Corner borders -->
+            <div
+              class="list-item__corner-border list-item__corner-border--topleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--topright"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botright"
+            ></div>
+          </li>
+          <li class="list-item list-item--blue">
+            <img
+              class="list-item__icon"
+              src="assets/images/icon-visual.svg"
+              alt="reaction-icon"
+            />
+            <div class="list-item__text">Visual</div>
+            <div class="list-item__score"><strong>80</strong> / 100</div>
+            <!-- Corner borders -->
+            <div
+              class="list-item__corner-border list-item__corner-border--topleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--topright"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botleft"
+            ></div>
+            <div
+              class="list-item__corner-border list-item__corner-border--botright"
+            ></div>
+          </li>
+        </ul>
+        <button class="button">Continue</button>
+      </section>
+    </div>
+  </body>
 </html>
