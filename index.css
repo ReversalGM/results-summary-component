@@ -257,6 +257,15 @@ body {
   font-weight: 700;
 }
 
+.button:hover,
+button:focus {
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue) 80%
+  );
+  cursor: pointer;
+}
+
 @media (min-width: 600px) {
   .result-container {
     flex-direction: row;
